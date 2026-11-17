@@ -174,7 +174,7 @@ Chronograf доступен по адресу `http://158.160.55.39:8888` (по�
 
 **Скриншот стартовой страницы Chronograf:**
 
-![Chronograf UI](screenshots/chronograf-main.png)
+![Alt text](images/1.png)
 
 *На скриншоте виден интерфейс Chronograf: боковая панель (Host List, Data Explorer, Dashboards, Alerting, Configuration) и стартовая страница.*
 
@@ -184,7 +184,7 @@ Chronograf доступен по адресу `http://158.160.55.39:8888` (по�
 
 **Скриншот графика CPU и запроса:**
 
-![Chronograf Data Explorer CPU](screenshots/chronograf-cpu.png)
+![Alt text](images/2.png)
 
 *На скриншоте виден график `usage_system` и InfluxQL-запрос вида:*
 ```sql
@@ -218,7 +218,7 @@ I! Loaded inputs: cpu docker influxdb syslog system
 
 **Скриншот списка Measurements с метриками Docker:**
 
-![Chronograf Docker Measurements](screenshots/chronograf-docker-measurements.png)
+![Alt text](images/3.png)
 
 *На скриншоте виден список измерений базы `telegraf.autogen`, включая `docker_container_cpu`, `docker_container_mem`, `docker_engine` и другие.*
 
