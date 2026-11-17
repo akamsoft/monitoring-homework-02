@@ -477,13 +477,10 @@ $ sudo wc -l /var/log/$(date +%y-%m-%d)-awesome-monitoring.log
 | **Количество контейнеров** | `docker_n_containers` | `running` | `SELECT mean("running") AS "Containers running" FROM "telegraf"."autogen"."docker_n_containers" WHERE time > now() - 15m GROUP BY time(30s) fill(null)` |
 | **Аптайм** | `system` | `uptime` | `SELECT mean("uptime") / 3600 AS "Uptime, h" FROM "telegraf"."autogen"."system" WHERE time > now() - 15m GROUP BY time(1m) fill(null)` |
 | **Сетевой трафик** (доп.) | `net` | `bytes_recv` / `bytes_sent` | `SELECT mean("bytes_recv") AS "RX", mean("bytes_sent") AS "TX" FROM "telegraf"."autogen"."net" WHERE time > now() - 15m GROUP BY time(10s), "interface" fill(null)` |
-| **Load average** (доп.) | `system` | `load1` / `load5` / `load15` | `SELECT mean("load1"), mean("load5"), mean("load15") FROM "telegraf"."autogen"."system" WHERE time > now() - 15m GROUP BY time(10s) fill(null)` |
 
 **Скриншот дашборда Chronograf:**
 
-![Chronograf Dashboard](screenshots/chronograf-dashboard.png)
-
-*На скриншоте видны панели: утилизация CPU, использование RAM, утилизация диска, количество запущенных контейнеров, аптайм, сетевой трафик и load average.*
+![Alt text](images/4.png)
 
 ---
 
