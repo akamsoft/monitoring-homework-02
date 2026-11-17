@@ -482,15 +482,5 @@ $ sudo wc -l /var/log/$(date +%y-%m-%d)-awesome-monitoring.log
 
 ![Alt text](images/4.png)
 
----
 
-## Итог
-
-В ходе выполнения домашнего задания:
-
-1. Разобраны теоретические вопросы о минимальном наборе метрик, SLI/SLO/SLA, сборе ошибок без бюджета, ошибках в расчёте SLA, плюсах и минусах pull/push и классификации систем мониторинга.
-2. Развёрнут TICK-стек (InfluxDB, Telegraf, Chronograf, Kapacitor) через Docker Compose, устранены типовые проблемы с правами, конфигурацией Telegraf и доступом к docker.sock.
-3. В Chronograf построен график утилизации CPU и получены метрики Docker (`docker_container_cpu`, `docker_container_mem`, `docker_engine` и др.).
-4. Написан python3-скрипт для сбора метрик из `/proc`, настроен cron-запуск каждую минуту, получен лог с JSON-строками в формате `YY-MM-DD-awesome-monitoring.log`.
-5. Создан дашборд в Chronograf с панелями CPU, RAM, диска, контейнеров, аптайма, сети и load average.
 
