@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Домашнее задание к занятию «13. Системы мониторинга»
 
 **Выполнил:** [Ваше имя]  
@@ -516,3 +517,6 @@ $ sudo wc -l /var/log/$(date +%y-%m-%d)-awesome-monitoring.log
 5. Создан дашборд в Chronograf с панелями CPU, RAM, диска, контейнеров, аптайма, сети и load average.
 
 Все скриншоты приложены в папке `screenshots/`.
+=======
+# monitoring-homework-02
+>>>>>>> origin/main
